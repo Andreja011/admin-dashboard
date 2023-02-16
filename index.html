@@ -13,39 +13,50 @@
   <div class="container">
     <aside class="sidebar">
       <ul>
-        <li>Dashboard</li>
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
+        <li><ion-icon name="apps" class="icons dashboard"></ion-icon>Dashboard
+        </li>
+        <li><ion-icon name="home" class="icons"></ion-icon>Home</li>
+        <li><ion-icon name="id-card" class="icons"></ion-icon>Profile
+        </li>
+        <li><ion-icon name="chatbox-ellipses" class="icons"></ion-icon>Messages
+        </li>
+        <li><ion-icon name="timer" class="icons"></ion-icon>History</li>
+        <li><ion-icon name="checkmark-circle" class="icons"></ion-icon>Tasks
+        </li>
+        <li><ion-icon name="people" class="icons"></ion-icon>Communities
+        </li>
+        <li><ion-icon name="settings" class="icons"></ion-icon>Settings
+        </li>
+        <li><ion-icon name="help-circle" class="icons"></ion-icon>Support</li>
+        <li><ion-icon name="shield-checkmark" class="icons"></ion-icon>Privacy
+        </li>
       </ul>
     </aside>
-    <main>
+    <main class="section-main">
       <header class="primary-header">
-        <ul>
-          <li>
-            <ion-icon name="search-circle-outline"
-              class="primary-header-search-icon"></ion-icon>
-            <input type="text" placeholder="Search">
+        <ul class="primary-header-first-row">
+          <li class="primary-header-first-row-first-item">
+            <ion-icon name="search-outline" class="icons"></ion-icon>
+            <input type="text" class="search">
           </li>
-          <li>
-            <div>Notification bell</div>
-            <div>Image</div>
-            <p>Andreja Simonović</p>
+          <li class="primary-header-first-row-second-item">
+            <ion-icon name="notifications-outline" class="icons"></ion-icon>
+            <ion-icon name="person-circle-outline" class="images"></ion-icon>
+            <p class="primary-header-first-row-name">Andreja Simonović</p>
           </li>
         </ul>
-        <ul>
-          <li>Image</li>
-          <li>Hi there,</li>
-          <li>Andreja Simonović (@andreja)</li>
-          <li>New</li>
-          <li>Upload</li>
-          <li>Share</li>
+        <ul class="primary-header-second-row">
+          <li>
+            <ion-icon name="person-circle-outline"
+              class="images images-big"></ion-icon>
+            <div class="primary-header-second-row-hello-message">
+              <p>Hi there,</p>
+              <p>Andreja Simonović (@andreja)</p>
+            </div>
+          </li>
+          <li class="primary-header-second-row-buttons">New</li>
+          <li class="primary-header-second-row-buttons">Upload</li>
+          <li class="primary-header-second-row-buttons">Share</li>
         </ul>
       </header>
       <section class="projects">
@@ -106,7 +117,7 @@
             auctor. Cras fringilla sagittis sem in mattis...</p>
         </div>
       </section>
-      <section>
+      <section class="trending">
         <h2>Trending</h2>
         <ul>
           <li>
