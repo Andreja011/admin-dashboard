@@ -4,11 +4,12 @@
   --font-regular: 400;
   --font-bold: 700;
   --font-extra-bold: 900;
-  --white: #f8fafc;
-  --dark-gray: #4b5563;
-  --light-gray: #d1d5db;
-  --yellow: #facc15;
-  --blue: #0ea5e9;
+  --white: #ffffff;
+  --black: #000000;
+  --light-gray: #e2e8f0;
+  --yellow: #f0b42a;
+  --blue: #1a92d3;
+  --text-gray: #636363;
 }
 
 * {
@@ -25,7 +26,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1;
   font-weight: var(--font-regular);
-  color: var(--dark-gray);
+  color: var(--black);
 }
 
 ol,
@@ -50,8 +51,8 @@ button {
 }
 
 .section-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
 .primary-header {
@@ -59,7 +60,6 @@ button {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem;
-  border-bottom: 1px solid black;
 }
 
 .icons {
@@ -155,11 +155,22 @@ button {
   padding: 1rem;
 }
 
+.sidebar > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar > ul > li:nth-child(7) {
+  margin-bottom: 3rem;
+}
+
 .sidebar > ul > li:first-child {
   font-size: 2.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .sidebar > ul > li {
@@ -174,8 +185,70 @@ button {
   height: 3rem;
 }
 
-.projects,
-.announcements,
-.trending {
+.projects {
+  padding: 2rem 1rem;
   background-color: var(--light-gray);
+}
+
+.main-cards {
+  width: 100rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: var(--light-gray);
+}
+
+.projects-cards > div {
+  border-left: 4px solid var(--yellow);
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: var(--white);
+  position: relative;
+}
+
+.projects-cards > div > div {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.projects-cards > div > div > ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.projects-cards > div > h3 {
+  font-size: 1.5rem;
+}
+
+.projects-cards > div > p {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+  margin-bottom: 3rem;
+}
+
+.projects-header,
+.announcements-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background-color: var(--light-gray);
+}
+
+.announcements > div > h3 {
+  font-size: 1.5rem;
 }
