@@ -249,6 +249,27 @@ button {
   background-color: var(--light-gray);
 }
 
-.announcements > div > h3 {
+.announcements > div > div > h3 {
   font-size: 1.5rem;
 }
+
+.announcements-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.announcements > div {
+  background-color: var(--white);
+  padding: 3rem;
+}
+
+.announcements > .announcements-cards {
+  border-radius: 8px;
+}
+
+.announcements > div > div > p {
+  color: var(--text-gray);
+}
+
+/* smanjiti font u levom sidebaru */
