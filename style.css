@@ -50,11 +50,6 @@ button {
   grid-template-columns: 1fr 4fr;
 }
 
-.section-main {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
-}
-
 .primary-header {
   grid-column: 1 / span 3;
   display: flex;
@@ -138,7 +133,6 @@ button {
 .primary-header-second-row-buttons {
   width: 8rem;
   height: 3rem;
-  border: 1px solid black;
   border-radius: 20px;
   font-size: 1.2rem;
   font-weight: var(--font-bold);
@@ -147,6 +141,8 @@ button {
   align-items: center;
   justify-content: center;
   margin: auto 0;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .sidebar {
@@ -166,7 +162,7 @@ button {
 }
 
 .sidebar > ul > li:first-child {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -181,8 +177,8 @@ button {
 }
 
 .icons.dashboard {
-  width: 3rem;
-  height: 3rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 .projects {
@@ -191,7 +187,6 @@ button {
 }
 
 .main-cards {
-  width: 100rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -257,11 +252,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .announcements > div {
   background-color: var(--white);
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .announcements > .announcements-cards {
@@ -273,3 +269,28 @@ button {
 }
 
 /* smanjiti font u levom sidebaru */
+.trending > h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.trending > ul {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.trending > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.trending > ul > li > div > p:nth-child(2) {
+  color: var(--text-gray);
+}
